@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { msgs } from './messages.svelte.ts';
-	import { msgIdx } from './msgIdx.svelte.ts';
+	import { msgs } from './shared/messages.svelte.ts';
+	import { msgIdx } from './shared/msgIdx.svelte.ts';
 	import { slide } from 'svelte/transition';
 
 	let curMsgs = $derived(msgs.slice(0, msgIdx.msgIdx));
